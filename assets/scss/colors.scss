@@ -1,0 +1,94 @@
+// Colors
+$lightGray: #E5E5E6;
+$gray: #6A6A6A;
+$lightBlue: #009FE3;
+$purple: #2F3270;
+$searchGray: #6D6969;
+$searchLightGray: #C4C4C4;
+$error: #EA4335;
+$backgroundGray: #FAFAFA;
+$validGreen: #2fb352;
+$invalidRed: #ea4335;
+
+$brand-grey-100: #F0F4F8;
+$brand-grey-200: #DDE6EE;
+$brand-grey-300: #C0D0DF;
+$brand-grey-400: #99ACBC;
+$brand-grey-500: #7B8B99;
+$brand-grey-600: #596168;
+$brand-grey-700: #2F353A;
+
+$brand-navy-200: #A1BDDC;
+$brand-navy-300: #6B90C0;
+$brand-navy-800: #192940;
+$brand-navy-1000: #080E16;
+$brand-navy-900: #101C2C;
+
+$brand-blue-50: #F2FAFE;
+$brand-blue-200: #98D5FD;
+$brand-blue-300: #4DB1FD;
+$brand-blue-500: #128AFB;
+$brand-blue-700: #1070C9;
+
+$brand-yellow-600: #FFDA2F;
+
+$indigo-50: #F2F5FE;
+$indigo-500: #1250FB;
+
+$red-50: #FEF3F2;
+$red-600: #E32012;
+$red-700: #C91C10;
+
+$green-50: #F2FEF4;
+$green-700: #10C929;
+$green-900: #086414;
+
+$violet-50: #F5F2FE;
+$violet-600: #4A12E3;
+
+// Margins
+@mixin margin-page {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 70px;
+}
+
+@mixin mobilePadding() {
+  @include phone-only() {
+    padding-left: 23px;
+    padding-right: 25px;
+  }
+}
+
+// Media
+@mixin phone-only {
+  @media (max-width: 499px) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin demo-media {
+  @media (max-width: 1044px) {
+    @content;
+  }
+}
+
+
+
+@mixin desktop-down {
+  @media (max-width: 1399px) {
+    @content
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
